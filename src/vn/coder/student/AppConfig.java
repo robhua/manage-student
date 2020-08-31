@@ -7,12 +7,12 @@ import org.springframework.stereotype.Component;
 public class AppConfig {
 	@Bean
 	public StudentService studentService() {
-		return new StudentService();
+		return new StudentServiceImpl();
 	}
 	
 	@Bean
 	public StudentDao studentDao() {
-		return new StudentDao();
+		return new StudentDaoImpl();
 	}
 	
 	@Bean
